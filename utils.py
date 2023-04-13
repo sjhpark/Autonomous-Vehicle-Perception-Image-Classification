@@ -15,6 +15,22 @@ print(f"labels: {labels}")
 
 
 # Creating npy file
+def save_images(path):
+    files = glob('{}/*/*_image.jpg'.format(path))
+    files.sort()
+    print(f"# of images in {path}: {len(files)}")
+
+    name = '{}/{}_images.npy'.format(path, path)
+    images_list = []
+    
+    for file in files:
+        images_list.append(plt.imread(file))
+
+    np.save(name, images_list)
+    print('Saved file to `{}`'.format(name))
+    
+
+# Creating npy file
 def write_paths(path):
     files = glob('{}/*/*_image.jpg'.format(path))
     files.sort()
