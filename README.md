@@ -23,7 +23,7 @@ Rotation vectors, centroids, sizes, and camera matrices of 3D bounding boxes are
 ![image](https://user-images.githubusercontent.com/83327791/232202570-85c5ebab-c5f3-4664-8485-7e2bf6ad4adc.png)
 ![image](https://user-images.githubusercontent.com/83327791/232202583-3b6dcc6d-c75a-452f-8910-9798721e96b5.png)
 
-- Cropping a vhiecle from a snpashot using 2D bounding box (computed from max & min vertices of 3D bounding box)
+- Cropping a vehicle from a snpashot using 2D bounding box (computed from max & min vertices of 3D bounding box)
 
 ![image](https://user-images.githubusercontent.com/83327791/232202875-7a2c5fa1-d6f6-4e48-b906-be7bb1c6b190.png)
 ![image](https://user-images.githubusercontent.com/83327791/232202880-8dfc639f-4fbc-4b2a-ab69-d91894d5b906.png)
