@@ -59,6 +59,7 @@ Our second method achieved the highest test accuracy among all experimental meth
 [2] B. Xu, N. Wang, T. Chen, and M. Li. Empirical evaluation of rectified activations in convolution network. 2015.
 
 
+## Appendix
 | Method | Description |
 | --- | --- |
 | Method 1 | <ul><li>Model - ResNet18 (17 convolutional layers & 1 dense layer; ReLU activation)</li><li>Data - Full-scale scene images</li><li>Additional Features - Coordinates of 3D bounding box around each vehicle</li><li>Preprocessing - Resizing, Normalization, Horizontal-Flipping</li><li>Stochastic Gradient Descent, Cross Entropy Loss</li></ul> |
