@@ -32,7 +32,7 @@ Rotation vectors, centroids, sizes, and camera matrices of 3D bounding boxes are
 
 
 ## Experiments
-The first method involved fine-tuning a pre-trained ResNet18 model \cite{he2016deep} \footnote{ResNet18 is a convolutional neural network for image classification, introduced in "Deep Residual Learning for Image Recognition" by Kaiming He et al. in 2016} by passing training images through its 17 convolutional layers, concatenating bounding box coordinates to feed the result into a fully connected layer.
+The first method involved fine-tuning a pre-trained ResNet18 model by passing training images through its 17 convolutional layers, concatenating bounding box coordinates to feed the result into a fully connected layer.
 
 The second method transferred a pre-trained ResNet18 and replaced its last layer with a dense layer having 3 output neurons. The model was fine-tuned with training images.
 
@@ -52,3 +52,17 @@ Our four experimental approaches were evaluated using 2,631 test images extracte
 
 ## Conclusion
 Our second method achieved the highest test accuracy among all experimental methods suggesting that adding extra layers, activation functions, or data augmentation techniques does not always improve image classification performance. Experimenting with different combinations of these techniques may be necessary, and our findings provide additional insights for the field of autonomous vehicle perception.
+
+## References
+[1] K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognition. pages 770–778, 2016.
+
+[2] B. Xu, N. Wang, T. Chen, and M. Li. Empirical evaluation of rectified activations in convolution network. 2015.
+
+
+| Method | Description |
+| --- | --- |
+| Method 1 | <ul><li>Model - ResNet18 (17 convolutional layers & 1 dense layer; ReLU activation)</li><li>Data - Full-scale scene images</li><li>Additional Features - Coordinates of 3D bounding box around each vehicle</li><li>Preprocessing - Resizing, Normalization, Horizontal-Flipping</li><li>Stochastic Gradient Descent, Cross Entropy Loss</li></ul> |
+| Method 2 | <ul><li>Model - ResNet18 (17 convolutional layers & 1 dense layer; ReLU activation); Last layer modified to accept 3 classes</li><li>Data - Full-scale scene images</li><li>Preprocessing - Resizing, Normalization</li><li>Adam Optimizer, Cross Entropy Loss</li></ul> |
+| Method 3 | <ul><li>Model - ResNet18 (17 convolutional layers & 1 dense layer; ReLU activation); Feature Extractor (another ResNet18); Simple Neural Networks (2 dense layers)</li><li>Data - Full-scale scene images</li><li>Additional Features - Coordinates of 2D bounding box around each vehicle</li><li>Preprocessing - Resizing, Normalization, Horizontal Flipping, Rotation</li><li>Adam Optimizer, Cross Entropy Loss</li></ul> |
+| Method 4 | <ul><li>Model - Modified ResNet18 (17 convolutional layers & 3 dense layers; Leaky ReLU activation)</li><li>Data - Full-scale scene images</li><li>Preprocessing - Resizing, Normalization</li><li>Adam Optimizer, Cross Entropy Loss</li></ul> |
+
