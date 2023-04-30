@@ -6,9 +6,9 @@ Carnegie Mellon University
 [In-class Kaggle Challenge](https://www.kaggle.com/competitions/16664-spring-2023-task-1-image-classification)
 
 ---
-![driving](https://user-images.githubusercontent.com/83327791/232208460-b2cf6115-ff77-4cf4-b3a8-8aae766edb36.gif)
-
 # Comparing Multiple Techniques for Vehicle Classification
+
+![driving](https://user-images.githubusercontent.com/83327791/232208460-b2cf6115-ff77-4cf4-b3a8-8aae766edb36.gif)
 
 ## Abstract
 *Vehicle classification is a critical task in machine learning and computer vision, with many real-world applications. In this project, we explore multiple vehicle classification techniques using pre-processing and deep learning models on driving scenes. We compare the performance of different approaches and demonstrate their potential for real-time vehicle classification. We hope our results contribute to advancing research in machine learning and computer vision and offer a starting point for improving accuracy in vehicle classification.*
