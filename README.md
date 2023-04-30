@@ -3,7 +3,7 @@
 
 Carnegie Mellon University
 
-In-class Kaggle Challenge: https://www.kaggle.com/competitions/16664-spring-2023-task-1-image-classification
+[In-class Kaggle Challenge](https://www.kaggle.com/competitions/16664-spring-2023-task-1-image-classification)
 
 ---
 ![driving](https://user-images.githubusercontent.com/83327791/232208460-b2cf6115-ff77-4cf4-b3a8-8aae766edb36.gif)
